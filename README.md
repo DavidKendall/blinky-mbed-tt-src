@@ -14,17 +14,17 @@ and the GCC_ARM tools (https://developer.arm.com/open-source/gnu-toolchain/gnu-r
 1. Create a new mbed OS2 directory for the application
    
      ```sh
-     $ mbed new mbed-blinky-tt --mbedlib
+     $ mbed new blinky-mbed-tt --mbedlib
      ```
 1. Set the current working directory to your application directory
 
      ```sh
-     $ cd mbed-blinky-tt
+     $ cd blinky-mbed-tt
      ```
 1. Clone the source repository into a directory called `src`
 
      ```sh
-     $ git clone https://github.com/davidkendall/blinky-tt src
+     $ git clone https://github.com/davidkendall/blinky-mbed-tt-src src
      ```
 1. Compile the program
 
@@ -34,7 +34,7 @@ and the GCC_ARM tools (https://developer.arm.com/open-source/gnu-toolchain/gnu-r
 1. Load and run, e.g.
 
      ```sh
-     $ cp BUILD/K64F/GCC_ARM/mbed-blinky-tt.bin /media/mbed
+     $ cp BUILD/K64F/GCC_ARM/blinky-mbed-tt.bin /media/mbed
      ```
 assuming that your board is mounted as a drive at `/media/mbed`. It's also 
 possible to use [pyocd](https://github.com/mbedmicro/pyOCD) and gdb for load and debug.
