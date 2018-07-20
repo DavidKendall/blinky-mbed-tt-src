@@ -82,7 +82,7 @@ void schRemoveTask(            // remove a set from the task set
   schTasks[id].invocations = 0;
 }
 
-void schSleep(void) {         // go to sleep to save power
-  // PCON |= 1;
+void schSleep(void) {         // go to sleep, if possible, to save power
+  __WFI();
 }
 
